@@ -1,0 +1,55 @@
+.contact-page-container {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: 5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+}
+
+.heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.subheading {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+.content {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.text:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.text:hover {
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+.footer h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.footer .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.bg{
+  background-image: url('../assets/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
