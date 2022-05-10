@@ -3,6 +3,9 @@ import { NavLink } from "react-router-dom";
 
 import classes from "./NavBar.module.css";
 
+import logo from "../assets/images/websitelogo.png"
+import { ReactComponent as UserLogo } from "../assets/icons/user.svg"
+
 function NavBar() {
   const navLists = [
     { name: "Home", link: "/" },
@@ -16,7 +19,7 @@ function NavBar() {
     <nav className={classes["navbar__container"]}>
       {/* logo */}
       <div className={classes["navbar__logo"]}>
-        <p>logo</p>
+       <img src={logo} alt="Website logo" />
       </div>
 
       {/* centered items */}
@@ -42,7 +45,8 @@ function NavBar() {
 
       {/* User button */}
       <div className={classes["navbar__user"]}>
-        <p>User</p>
+       <UserLogo className={classes["navbar__user-logo"]}  />
+       <p className={classes["navbar__user-text"]}>Rohan</p>
       </div>
     </nav>
   );
