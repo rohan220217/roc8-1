@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 import classes from "./NavBar.module.css";
 
-import logo from "../assets/images/websitelogo.png"
-import { ReactComponent as UserLogo } from "../assets/icons/user.svg"
+import logo from "../assets/images/websitelogo.png";
+import { ReactComponent as UserLogo } from "../assets/icons/user.svg";
 
 function NavBar() {
   const navLists = [
@@ -19,13 +19,13 @@ function NavBar() {
     <nav className={classes["navbar__container"]}>
       {/* logo */}
       <div className={classes["navbar__logo"]}>
-       <img src={logo} alt="Website logo" />
+        <img src={logo} alt="Website logo" />
       </div>
 
       {/* centered items */}
       <ul className={classes["navbar__items"]}>
         {navLists.map((item) => (
-          <li>
+          <li key={`nav-${item.name}`}>
             <NavLink
               to={item.link}
               className={({ isActive }) =>
@@ -45,8 +45,8 @@ function NavBar() {
 
       {/* User button */}
       <div className={classes["navbar__user"]}>
-       <UserLogo className={classes["navbar__user-logo"]}  />
-       <p className={classes["navbar__user-text"]}>Rohan</p>
+        <UserLogo className={classes["navbar__user-logo"]} />
+        <p className={classes["navbar__user-text"]}>Rohan</p>
       </div>
     </nav>
   );

@@ -25,6 +25,7 @@ function ContactPage() {
               <div
                 className={classes.text}
                 onClick={() => (window.location = `mailto:${data.email}`)}
+                key={`key-${data.email}`}
               >
                 <h4 className={classes.subheading}>{data.email}</h4>
                 <p className={classes.content}>{data.content}</p>
