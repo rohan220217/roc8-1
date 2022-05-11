@@ -4,7 +4,11 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 4rem 2rem;
 }
-
+@media screen and (max-width: 550px) {
+  .fliterContainer{
+   margin-bottom: 2rem;
+  }
+}
 .headingContainer {
   display: flex;
   align-items: center;

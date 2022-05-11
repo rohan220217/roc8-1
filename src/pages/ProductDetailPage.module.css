@@ -6,6 +6,15 @@
   padding: 2rem;
   gap: 2rem;
 }
+@media screen and (max-width: 550px) {
+  .container{
+  display: block;
+  }
+  .productDetailContainer{
+    flex-direction: column;
+  }
+}
+
 .productDetails {
   flex: 0 1 70%;
   background-color: white;

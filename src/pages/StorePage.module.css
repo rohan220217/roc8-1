@@ -13,6 +13,11 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 4rem 2rem;
 }
+@media screen and (max-width: 550px) {
+  .container{
+    display: block;
+  }
+}
 
 .headingContainer {
   display: flex;
