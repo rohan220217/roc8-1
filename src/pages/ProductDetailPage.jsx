@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 
+import CartContext from "../store/cart-context";
 import classes from "./ProductDetailPage.module.css";
 import shoe from "../assets/images/shoe2.png";
-
 import CartComponent from "../components/cart/CartComponent";
 
 function ProductDetailPage() {
   const history = useNavigate();
   const location = useLocation();
 
+  const cartCtx = useContext(CartContext);
   const backButtonHanlder = () => {
     history(-1);
   };
@@ -98,7 +99,12 @@ function ProductDetailPage() {
           </div>
           <div className={classes.footerButton}>
             <button className={classes.shareButton}>Share Design</button>
-            <button className={classes.addToCartButton}>Add To Cart</button>
+            <button
+              className={classes.addToCartButton}
+              onClick={() => cartCtx.addCartItem(location.state)}
+            >
+              Add To Cart
+            </button>
           </div>
         </div>
       </div>

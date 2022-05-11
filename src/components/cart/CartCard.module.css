@@ -4,6 +4,7 @@
   display: flex;
   width: 100%;
   gap: 2rem;
+  position: relative;
 }
 .cardDetails{
   flex: 1 0 auto;
@@ -12,6 +13,11 @@
   flex: 2 0 auto;
   /* width: 100%; */
   background-color: #eee;
+}
+.crossIcon{
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
 }
 .cardTitle {
   font-size: 2rem;

@@ -16,6 +16,12 @@
   gap: 3rem;
   margin-bottom: 1rem;
 }
+.logoBoxesDisable{
+  color: gray;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
 .logoBox {
   display: flex;
   align-items: center;
@@ -27,6 +33,14 @@
 
 .orderButton {
   background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: block;
+  margin: 3rem auto 0 auto;
+}
+.orderButtonDiabled {
+  background-color: gray;
+  border: 2px solid gray;
   color: #fff;
   padding: 0.5rem 1rem;
   display: block;
