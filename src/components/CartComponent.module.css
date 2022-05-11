@@ -1,0 +1,51 @@
+.cartContainer {
+  flex: 0 1 25%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 4rem 2rem;
+}
+
+.cartCards {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logoBoxes {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+.logoBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logoBox p {
+  font-size: 1.5rem;
+}
+
+.orderButton {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: block;
+  margin: 3rem auto 0 auto;
+}
+.cartContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headingContainer h1 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}

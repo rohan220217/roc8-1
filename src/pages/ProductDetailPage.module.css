@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+}
+.productDetails {
+  flex: 0 1 70%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 4rem 2rem;
+}
+.productDetails h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.productDetails h3:hover {
+  cursor: pointer;
+}
+.productDetailContainer {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+  justify-content: center;
+}
+.productImageContainer {
+  flex: 1 0 68%;
+  display: flex;
+  gap: 1rem;
+}
+.productImageContainer > img {
+  /* width: 100%; */
+  flex: 0 1 68%;
+  background-color: #eee;
+}
+.productImages {
+  /* width: 100%; */
+  flex: 0 1 28%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.productImages img {
+  width: 100%;
+  background-color: #eee;
+}
+.productDetail {
+  flex: 1 0 28%;
+}
+.productDetail h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.productDetail h3 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.productDetail h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.productDetail p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.selectBox {
+  display: flex;
+
+  /* gap: 4rem; */
+  align-items: center;
+}
+.selectBox h3 {
+  width: 8rem;
+}
+.selectBoxes {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.selectBoxes div {
+  width: 3rem;
+  height: 3rem;
+  background-color: #ddd;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerRating {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.footerButton{
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+    justify-content: center;
+
+}
+.addToCartButton{
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+.shareButton{
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 0.5rem 1rem;
+}

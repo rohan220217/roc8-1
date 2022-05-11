@@ -1,5 +1,6 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
+import { useNavigate } from "react-router-dom";
 
 import classes from "./ProductCard.module.css";
 import shoe from "../assets/images/shoe2.png";
@@ -8,9 +9,12 @@ function ProductCard() {
   const ratingChanged = (newRating) => {
     console.log(newRating);
   };
-
+  const history = useNavigate();
+  const openProductdetail = () => {
+    history("/product-detail");
+  };
   return (
-    <div className={classes.card}>
+    <div className={classes.card} onClick={openProductdetail}>
       <img src={shoe} alt="product" className={classes.cardImage} />
       <h3 className={classes.cardTitle}>KSL 01</h3>
       <div className={classes.cardFooter}>
