@@ -1,14 +1,15 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 
 import classes from "./ProductDetailPage.module.css";
 import shoe from "../assets/images/shoe2.png";
 
-import CartComponent from "../components/CartComponent";
+import CartComponent from "../components/cart/CartComponent";
 
 function ProductDetailPage() {
   const history = useNavigate();
+  const location = useLocation();
 
   const backButtonHanlder = () => {
     history(-1);
@@ -29,17 +30,17 @@ function ProductDetailPage() {
           </div>
           {/* Product detail  */}
           <div className={classes.productDetail}>
-            <h1>KSL 01</h1>
+            <h1>{location.state.title}</h1>
             <h4>by KICKSUP and you</h4>
             <ReactStars
               count={5}
               isHalf={true}
-              value={3.5}
+              value={location.state.star}
               size={22}
               activeColor="#ffd700"
             />{" "}
             <span>80 reviews</span>
-            <h3>Rs. 2000/-</h3>
+            <h3>Rs. {location.state.price}/-</h3>
             <p>Get an exclusive 20% off shopping with HDFC bank</p>
             <div className={classes.selectBox}>
               <h3>Front</h3>
@@ -96,9 +97,8 @@ function ProductDetailPage() {
             />
           </div>
           <div className={classes.footerButton}>
-
-          <button className={classes.shareButton}>Share Design</button>
-          <button className={classes.addToCartButton}>Add To Cart</button>
+            <button className={classes.shareButton}>Share Design</button>
+            <button className={classes.addToCartButton}>Add To Cart</button>
           </div>
         </div>
       </div>

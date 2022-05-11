@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as FilterLogo } from "../assets/icons/filter.svg";
+import { ReactComponent as FilterLogo } from "../../assets/icons/filter.svg";
 import classes from "./FilterComponent.module.css";
 
 function FilterComponent() {

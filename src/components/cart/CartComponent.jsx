@@ -4,9 +4,9 @@ import classes from "./CartComponent.module.css";
 import CartCard from "./CartCard"
 
 
-import { ReactComponent as CartLogo } from "../assets/icons/cart.svg";
-import { ReactComponent as LocationLogo } from "../assets/icons/location.svg";
-import { ReactComponent as CalendarLogo } from "../assets/icons/calendar.svg";
+import { ReactComponent as CartLogo } from "../../assets/icons/cart.svg";
+import { ReactComponent as LocationLogo } from "../../assets/icons/location.svg";
+import { ReactComponent as CalendarLogo } from "../../assets/icons/calendar.svg";
 
 function CartComponent() {
   return (

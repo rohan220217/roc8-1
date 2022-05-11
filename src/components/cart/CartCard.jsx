@@ -1,7 +1,7 @@
 import React from "react";
 
 import classes from "./CartCard.module.css";
-import shoe from "../assets/images/shoe2.png";
+import shoe from "../../assets/images/shoe2.png";
 
 function CartCard() {
   return (
