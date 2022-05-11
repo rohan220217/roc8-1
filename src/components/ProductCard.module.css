@@ -1,0 +1,23 @@
+.card {
+  flex: 0 1 30%;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+.cardImage {
+  width: 100%;
+  background-color: #eee;
+}
+.cardTitle {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardFooter h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}

@@ -1,5 +1,7 @@
 .container {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   padding: 2rem;
   gap: 2rem;
@@ -12,10 +14,10 @@
 
 
 .shopContainer {
-  flex: 0 1 40%;
+  flex: 0 1 45%;
 }
 .cartContainer {
-  flex: 0 1 30%;
+  flex: 0 1 25%;
 }
 
 .headingContainer{
@@ -42,4 +44,11 @@
     font-size: 2rem;
     font-weight: 500;
     margin: 2rem 0 1rem 0 ;
+}
+
+.productCards{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
