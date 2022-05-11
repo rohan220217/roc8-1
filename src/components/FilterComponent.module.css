@@ -1,0 +1,45 @@
+.fliterContainer {
+  flex: 0 1 30%;
+
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 4rem 2rem;
+}
+
+.headingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headingContainer h1 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.subHeading {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem 0;
+}
+
+.checkboxContainer label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 1rem;
+}
+.colors {
+  display: flex;
+  gap: 1rem;
+}
+.colorBox {
+  width: 3rem;
+  height: 3rem;
+}
+.applyButton {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: block;
+  margin: 3rem auto 0 auto;
+}

@@ -1,7 +1,7 @@
 .card {
   flex: 0 1 20rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-background-color: #fff;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,6 +27,6 @@ background-color: #fff;
   justify-content: center;
   margin: 1rem 0;
 }
-.cardLinks img:hover{
+.cardLinks img:hover {
   cursor: pointer;
 }

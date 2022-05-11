@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+}
+.card {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 4rem 2rem;
+}
+
+
+.shopContainer {
+  flex: 0 1 40%;
+}
+.cartContainer {
+  flex: 0 1 30%;
+}
+
+.headingContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.headingContainer h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.headingButton{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.headingButton button{
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+}
+.subHeading{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 2rem 0 1rem 0 ;
+}
