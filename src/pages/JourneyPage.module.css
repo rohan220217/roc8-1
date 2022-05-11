@@ -1,0 +1,89 @@
+.journeyContainer {
+  margin: 2rem auto;
+  max-width: 120rem;
+}
+.topImage {
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+}
+.imageContainer {
+  position: relative;
+  display: flex;
+}
+
+.imageText {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 500;
+}
+.content {
+  color: #fff;
+  background-color: black;
+  padding: 1rem 6rem;
+}
+
+.imageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent 50%,
+    rgba(0, 0, 0) 100%
+  );
+}
+
+.contentHeadline {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.contentText {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 3rem;
+}
+.contentContainer,
+.contentLastContainer {
+  position: relative;
+}
+.contentContainer::after {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: -2.95rem;
+  width: 0.1rem;
+  height: 90%;
+  background: white;
+}
+.contentContainer::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: -3.4rem;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.contentLastContainer::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: -3.4rem;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
