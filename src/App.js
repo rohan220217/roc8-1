@@ -10,6 +10,7 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 import StorePage from "./pages/StorePage";
 import TeamPage from "./pages/TeamPage";
 import { CartContextProvider } from "./store/cart-context";
+import { StoreContextProvider } from "./store/store-context";
 
 function App() {
   return (
@@ -18,16 +19,18 @@ function App() {
         <NavBar />
 
         <ScrollToTop />
-        <CartContextProvider>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="journey" element={<JourneyPage />} />
-            <Route path="team" element={<TeamPage />} />
-            <Route path="store" element={<StorePage />} />
-            <Route path="contact" element={<ContactPage />} />
-            <Route path="product-detail" element={<ProductDetailPage />} />
-          </Routes>
-        </CartContextProvider>
+        <StoreContextProvider>
+          <CartContextProvider>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="journey" element={<JourneyPage />} />
+              <Route path="team" element={<TeamPage />} />
+              <Route path="store" element={<StorePage />} />
+              <Route path="contact" element={<ContactPage />} />
+              <Route path="product-detail" element={<ProductDetailPage />} />
+            </Routes>
+          </CartContextProvider>
+        </StoreContextProvider>
       </BrowserRouter>
     </>
   );
