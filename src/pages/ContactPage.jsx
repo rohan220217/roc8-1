@@ -6,11 +6,15 @@ import twitter from "../assets/images/twitter.png";
 import insta from "../assets/images/insta.png";
 import facebook from "../assets/images/facebook.png";
 
-const reachUsData = [
-  { email: "support@kicksup.com", content: "for any technical support" },
-  { email: "info@kicksup.com", content: "for more information" },
-  { email: "feedback@kicksup.com", content: "to send your feedback" },
-  { email: "jobs@kicksup.com", content: "to work with us" },
+const reachMeData = [
+  {
+    value: "rk220217@gmail.com",
+    content: "for any technical support",
+    type: "mailto",
+  },
+  { value: "+917374091655", content: "for more information", type: "tel" },
+  // { value: "rk220217@gmail.com", content: "to send your feedback" },
+  // { value: "rk220217@gmail.com", content: "to work with us" },
 ];
 
 function ContactPage() {
@@ -19,15 +23,15 @@ function ContactPage() {
       <div className={classes["contact-page-container"]}>
         <div>
           <div className={classes.card}>
-            <h1 className={classes.heading}>Reach Us at</h1>
+            <h1 className={classes.heading}>Reach Out To Me</h1>
 
-            {reachUsData.map((data) => (
+            {reachMeData.map((data) => (
               <div
                 className={classes.text}
-                onClick={() => (window.location = `mailto:${data.email}`)}
-                key={`key-${data.email}`}
+                onClick={() => (window.location = `${data.type}:${data.value}`)}
+                key={`key-${data.value}`}
               >
-                <h4 className={classes.subheading}>{data.email}</h4>
+                <h4 className={classes.subheading}>{data.value}</h4>
                 <p className={classes.content}>{data.content}</p>
               </div>
             ))}

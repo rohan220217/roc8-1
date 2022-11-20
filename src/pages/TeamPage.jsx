@@ -62,8 +62,8 @@ function TeamPage() {
   return (
     <>
       <h1 className={classes.heading}>
-        Without bonding and coordination, every project is a failure. Look at
-        who makes KICKSUP great ;)
+        This project is solely made by me. In this project, I tried to showcase my React
+        Context skill ;)
       </h1>
       <div className={classes.teamContainer}>
         <div className={classes.cards}>

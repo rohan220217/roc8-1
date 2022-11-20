@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { ReactComponent as SearchLogo } from "../assets/icons/search.svg";
 
 import FilterComponent from "../components/store/FilterComponent";
@@ -10,6 +10,8 @@ import classes from "./StorePage.module.css";
 
 function StorePage() {
   const storeCtx = useContext(StoreContext);
+
+
   return (
     <div className={classes.container}>
       {/* Filter Component */}

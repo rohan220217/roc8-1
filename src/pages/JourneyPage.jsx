@@ -14,7 +14,7 @@ function JourneyPage() {
       </div>
       <div className={classes.content}>
         <div className={classes.contentContainer}>
-          <h5 className={classes.contentHeadline}>The Roots</h5>
+          <h5 className={classes.contentHeadline}>Blog 1</h5>
           <p className={classes.contentText}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
             voluptatibus corrupti ipsa, obcaecati, sequi perferendis vero totam
@@ -23,7 +23,7 @@ function JourneyPage() {
           </p>
         </div>
         <div  className={classes.contentContainer}>
-          <h5 className={classes.contentHeadline}>Chapter I</h5>
+          <h5 className={classes.contentHeadline}>Blog 2</h5>
           <p className={classes.contentText}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
             voluptatibus corrupti ipsa, obcaecati, sequi perferendis vero totam
@@ -32,7 +32,7 @@ function JourneyPage() {
           </p>
         </div>
         <div  className={classes.contentContainer}>
-          <h5 className={classes.contentHeadline}>Chapter II</h5>
+          <h5 className={classes.contentHeadline}>Blog 3</h5>
           <p className={classes.contentText}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
             voluptatibus corrupti ipsa, obcaecati, sequi perferendis vero totam
@@ -41,7 +41,7 @@ function JourneyPage() {
           </p>
         </div>
         <div  className={classes.contentLastContainer}>
-          <h5 className={classes.contentHeadline}>Kicksup</h5>
+          <h5 className={classes.contentHeadline}>Projects</h5>
           <p className={classes.contentText}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
             voluptatibus corrupti ipsa, obcaecati, sequi perferendis vero totam

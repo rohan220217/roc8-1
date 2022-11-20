@@ -14,6 +14,8 @@ const DUMMY_DATA = [
   { id: 6, title: "Item 0", price: "1500", star: 3.5, type: "loafer" },
 ];
 
+
+
 export const StoreContextProvider = (props) => {
   const [storeData, setStoreData] = useState(DUMMY_DATA);
 
@@ -33,13 +35,13 @@ export const StoreContextProvider = (props) => {
         (filterObject.type["sneaker"] && data.type === "sneaker")
       ) {
         updatedStoreData.push(data);
-
-        console.log("if");
-        console.log(data);
       }
     });
     setStoreData((prevData) => updatedStoreData);
   };
+
+  
+
   return (
     <StoreContext.Provider
       value={{
