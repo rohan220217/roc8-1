@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { ReactComponent as SearchLogo } from "../assets/icons/search.svg";
 
 import FilterComponent from "../components/store/FilterComponent";
